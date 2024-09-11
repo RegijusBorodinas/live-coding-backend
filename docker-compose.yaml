@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: hostinger-interview
+    ports:
+      - "7432:5432"
